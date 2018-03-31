@@ -42,7 +42,7 @@ async function scanInterface(iface) {
     console.log(`IP: ${iface.address}`);
     console.log(`Netmask: ${netmask}`);
     console.log(`Range: ${first} – ${last}`);
-    console.log("=====");
+    console.log();
 
     let promises = new Set();
 
@@ -56,7 +56,7 @@ async function scanInterface(iface) {
     }
     Promise.all(promises);
 
-    console.log("=====");
+    console.log();
     console.log(`Done scanning interface ${iface.name}`);
     console.log("=====");
 }
@@ -69,7 +69,6 @@ async function connect(addr) {
             timeout: 1000
         });
         socket.on("connect", async () => {
-            console.log(addr + " ist erreichbar");
             await checkForFritz(addr, socket);
             resolve(true);
         });
@@ -101,7 +100,7 @@ async function checkForFritz(addr, socket) {
 
             resp.on("end", () => {
                 if (data.includes("FRITZ!Box")) {
-                    console.log("FRITZ!Box gefunden: " + addr);
+                    console.log("Found FRITZ!Box: " + addr);
                 }
                 resolve();
             });

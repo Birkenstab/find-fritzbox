@@ -1,6 +1,6 @@
 {
   "name": "find-fritzbox",
-  "version": "0.0.2",
+  "version": "0.1.0",
   "description": "Find a FRITZ!Box in the local network",
   "keywords": [
     "fritzbox",
