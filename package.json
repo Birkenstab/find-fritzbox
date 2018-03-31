@@ -1,0 +1,20 @@
+{
+  "name": "find-fritzbox",
+  "version": "0.0.1",
+  "description": "Find a FRITZ!Box in the local network",
+  "main": "start.js",
+  "scripts": {
+    "start": "node app.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Birkenstab/find-fritzbox.git"
+  },
+  "author": "Moritz Beck (Birkenstab)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Birkenstab/find-fritzbox/issues"
+  },
+  "homepage": "https://github.com/Birkenstab/find-fritzbox#readme"
+}
