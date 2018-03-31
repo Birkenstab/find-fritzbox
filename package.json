@@ -1,8 +1,20 @@
 {
   "name": "find-fritzbox",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Find a FRITZ!Box in the local network",
+  "keywords": [
+    "fritzbox",
+    "network",
+    "scan",
+    "network-scanning",
+    "local-network",
+    "tool",
+    "npx"
+  ],
   "main": "start.js",
+  "bin": {
+    "find-fritzbox": "./app.js"
+  },
   "scripts": {
     "start": "node app.js",
     "test": "echo \"Error: no test specified\" && exit 1"
