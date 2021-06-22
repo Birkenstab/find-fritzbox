@@ -2,7 +2,7 @@
 Finds your FRITZ!Box in the local network by trying to connect to every ip address on port 80 in the local network
 
 ## Usage
-Run withouth installing (requires npm):
+Run without installing (requires npm):
 ```
 npx find-fritzbox
 ```
